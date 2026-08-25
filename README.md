@@ -150,6 +150,7 @@ The resulting dataset was exported for use in Tableau Public.
 ### 1. Executive Dashboard — Sales Overview
 
 The Executive Dashboard provides a high-level overview of business performance.
+[View on Tableau Public](https://public.tableau.com/app/profile/ludmila.kuznetsova/viz/ChinookAnalysis_SalesOverview/ChinookAnalysis)
 
 #### Key KPIs
 
@@ -168,6 +169,7 @@ The Executive Dashboard provides a high-level overview of business performance.
 ### 2. Analytical Dashboard — Sales Analysis
 
 The Analytical Dashboard provides a more detailed view of the main revenue drivers.
+[View on Tableau Public](https://public.tableau.com/app/profile/ludmila.kuznetsova/viz/ChinookAnalysis_SalesAnalysis/SalesAnalysis)
 
 #### Visualizations
 
