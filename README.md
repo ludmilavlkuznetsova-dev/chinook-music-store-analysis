@@ -145,7 +145,7 @@ The Fact_Sales dataset was created using a SQL query, exported as a CSV file, an
 
 The complete SQL query used to create the Fact_Sales dataset is available in [`sql/fact_sales.sql`](sql/fact_sales.sql).
 
-The final analytical dataset is available in [`data/fact_sales.csv`](data/fact_sales.csv).
+The final analytical dataset is available in [`data/fact_sales.csv`](data/Fact_Sales.csv).
 
 ## Dashboards
 
