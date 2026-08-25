@@ -141,9 +141,11 @@ The core revenue calculation is:
 
 **Revenue = UnitPrice × Quantity**
 
-The Fact_Sales dataset was created using a SQL query, exported as a CSV file, and then used as the data source for Tableau Public.
+The Fact_Sales dataset was created using a SQL query, exported as a CSV file, and validated in Excel before being used as the data source for Tableau Public.
 
 The complete SQL query used to create the Fact_Sales dataset is available in [`sql/fact_sales.sql`](sql/fact_sales.sql).
+
+The final analytical dataset is available in [`data/fact_sales.csv`](data/fact_sales.csv).
 
 ## Dashboards
 
