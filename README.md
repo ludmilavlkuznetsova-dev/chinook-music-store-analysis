@@ -95,7 +95,7 @@ The dataset contains:
 
 * **SQL (MySQL)** — data extraction, transformation, validation and analysis
 * **Tableau Public** — interactive dashboards and data visualization
-* **Excel - analytical dataset preparation
+* **Excel** - analytical dataset preparation
 * **Git & GitHub** — version control and project presentation
 
 ## Skills Demonstrated
