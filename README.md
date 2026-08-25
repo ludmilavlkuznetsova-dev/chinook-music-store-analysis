@@ -95,7 +95,7 @@ The dataset contains:
 
 * **SQL (MySQL)** — data extraction, transformation, validation and analysis
 * **Tableau Public** — interactive dashboards and data visualization
-* **Excel** — analytical dataset preparation
+* **Excel - analytical dataset preparation
 * **Git & GitHub** — version control and project presentation
 
 ## Skills Demonstrated
@@ -105,7 +105,7 @@ The dataset contains:
 * Aggregation and KPI calculation
 * Data validation
 * Calculated fields
-* Window functions / Pareto analysis
+* Pareto analysis
 * Customer and geographic analysis
 * Revenue analysis
 * Tableau dashboard development
@@ -116,34 +116,34 @@ The dataset contains:
 ## Analysis Workflow
 
 ```text
-Business Question
+Business Questions
        ↓
-KPI / Metric Definition
+Data Preparation in SQL
        ↓
-Identify Tables & Fields
+Fact_Sales Dataset
        ↓
-SQL Query
+Metric Validation
        ↓
-Result Validation
+Tableau Dashboards
        ↓
-Business Insight
+Analysis & Insights
        ↓
-Recommendation
-       ↓
-Dashboard
+Business Recommendations
 ```
 
 ## Data Preparation
 
 The original Chinook relational database was transformed into an analytical dataset using SQL.
 
-The main transformation combines transaction, customer, product, genre and employee information into a single Fact_Sales table suitable for analysis and visualization.
+The main transformation combines transaction, customer, product, genre and employee information into a single **Fact_Sales** dataset suitable for analysis and visualization.
 
 The core revenue calculation is:
 
 **Revenue = UnitPrice × Quantity**
 
-The resulting dataset was exported for use in Tableau Public.
+The Fact_Sales dataset was created using a SQL query, exported as a CSV file, and then used as the data source for Tableau Public.
+
+The complete SQL query used to create the Fact_Sales dataset is available in [`sql/fact_sales.sql`](sql/fact_sales.sql).
 
 ## Dashboards
 
@@ -270,7 +270,7 @@ This suggests that the dataset does not show strong, consistent seasonality, alt
 
 The main growth constraint is the lack of meaningful customer growth. With the customer base remaining at 46–47 customers per year, acquiring new customers should be a primary growth priority.
 
-### 2. Increase purchase frequency and Average Order Value
+### 2. Increase customer purchasing activity and Average Order Value
 
 Since order volume and AOV remained relatively stable, increasing purchase frequency and encouraging higher-value purchases could provide additional revenue growth without relying solely on customer acquisition.
 
