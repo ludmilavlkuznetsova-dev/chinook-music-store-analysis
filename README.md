@@ -1,12 +1,12 @@
-🎵 Music Store Business Analytics
+# 🎵 Music Store Business Analytics
 
-Project Overview
+## Project Overview
 
 This project presents an end-to-end sales analysis of the Chinook digital music store using SQL and Tableau.
 
 The goal of the project is to transform transactional sales data into actionable business insights and demonstrate a complete data analytics workflow — from defining business questions and preparing data to validating metrics and building interactive dashboards.
 
-The analysis covers sales transactions from 2021 to 2025.
+The analysis covers sales transactions from **2021 to 2025**.
 
 The analysis focuses on:
 
@@ -17,7 +17,7 @@ The analysis focuses on:
 * revenue per customer;
 * monthly revenue dynamics across years.
 
-Business Problem
+## Business Problem
 
 The management of a digital music store wants to understand what drives revenue and where the business performs best.
 
@@ -25,48 +25,49 @@ The company has detailed transactional data, but raw transaction records do not 
 
 The analysis therefore focuses on identifying the main revenue drivers, understanding geographic differences in customer value, and examining how sales change over time.
 
-Business Questions
+## Business Questions
 
-📈 Sales Performance
+### 📈 Sales Performance
 
 * How is the business performing overall?
 * What are the key sales KPIs?
 * How much revenue does the business generate?
 * How does revenue change over 2021–2025?
 * How many orders and customers does it have?
-* What is the average order value?
+* What is the Average Order Value?
 
-🎵 Product / Genre Analysis
+### 🎵 Product / Genre Analysis
 
 * Which genres generate the highest revenue?
 * How concentrated is revenue across genres?
 * Which genres account for approximately 80% of total revenue?
 
-🌍 Geographic Analysis
+### 🌍 Geographic Analysis
 
 * Which countries generate the most revenue?
 * How does revenue differ from customer count across countries?
 * Which countries generate higher revenue per customer?
 
-📅 Time Analysis
+### 📅 Time Analysis
 
-* How does monthly revenue change across 2021-2025?
+* How does monthly revenue change across 2021–2025?
 * Are there recurring monthly patterns?
 * How does revenue performance differ between years?
 
-Dataset
+## Dataset
 
-The project uses the Chinook sample digital music store database.
+The project uses the **Chinook sample digital music store database**.
 
-Analysis period: 2021-2025.
+**Analysis period:** 2021–2025.
 
 The source data contains information about customers, invoices, invoice items, tracks, albums, artists, genres and employees.
 
-For Tableau analysis, the relational data was transformed into an analytical Fact_Sales dataset.
+For Tableau analysis, the relational data was transformed into an analytical **Fact_Sales** dataset.
 
-Fact_Sales
+### Fact_Sales
 
-The final analytical dataset contains:
+The final analytical dataset contains transaction-level sales data combining information about transactions, customers, products, genres, dates and revenue.
+
 | Field | Description |
 |---|---|
 | Date | Invoice date |
@@ -84,16 +85,20 @@ The final analytical dataset contains:
 | EmployeeId | Support representative identifier |
 | EmployeeName | Support representative |
 
-The dataset contains 2,240 transaction lines, 412 orders and 59 customers.
+The dataset contains:
 
-Tools
+* **2,240 transaction lines**
+* **412 orders**
+* **59 customers**
 
-* SQL (MySQL) — data extraction, transformation, validation and analysis
-* Tableau Public — interactive dashboards and data visualization
-* Excel — analytical dataset preparation
-* Git & GitHub — version control and project presentation
+## Tools
 
-Skills Demonstrated
+* **SQL (MySQL)** — data extraction, transformation, validation and analysis
+* **Tableau Public** — interactive dashboards and data visualization
+* **Excel** — analytical dataset preparation
+* **Git & GitHub** — version control and project presentation
+
+## Skills Demonstrated
 
 * SQL querying
 * JOINs and relational data analysis
@@ -108,8 +113,9 @@ Skills Demonstrated
 * Business insight generation
 * Data storytelling
 
-Analysis Workflow
+## Analysis Workflow
 
+```text
 Business Question
        ↓
 KPI / Metric Definition
@@ -125,43 +131,45 @@ Business Insight
 Recommendation
        ↓
 Dashboard
+```
 
-Data Preparation
+## Data Preparation
 
 The original Chinook relational database was transformed into an analytical dataset using SQL.
 
 The main transformation combines transaction, customer, product, genre and employee information into a single Fact_Sales table suitable for analysis and visualization.
 
 The core revenue calculation is:
-Revenue = UnitPrice × Quantity
+
+**Revenue = UnitPrice × Quantity**
 
 The resulting dataset was exported for use in Tableau Public.
 
-Dashboards
+## Dashboards
 
-1. Executive Dashboard — Sales Overview
+### 1. Executive Dashboard — Sales Overview
 
 The Executive Dashboard provides a high-level overview of business performance.
 
-Key KPIs
+#### Key KPIs
 
-* Revenue: $2,328.60
-* Orders: 412
-* Customers: 59
-* Average Order Value: $5.65
+* **Revenue:** $2,328.60
+* **Orders:** 412
+* **Customers:** 59
+* **Average Order Value:** $5.65
 
-Visualizations
+#### Visualizations
 
 * Revenue / business KPI overview
 * Revenue Concentration by Genre — Pareto analysis
 * Top 5 Countries by Revenue
 * Year filter
 
-2. Analytical Dashboard — Sales Analysis
+### 2. Analytical Dashboard — Sales Analysis
 
 The Analytical Dashboard provides a more detailed view of the main revenue drivers.
 
-Visualizations
+#### Visualizations
 
 * Top 5 Countries by Revenue
 * Top 10 Genres by Revenue
@@ -170,13 +178,14 @@ Visualizations
 
 The dashboard allows users to investigate where revenue comes from and how revenue patterns differ across countries, genres and years.
 
-Key Insights
+## Key Insights
 
-1. The business showed no meaningful revenue growth from 2021 to 2025
+### 1. The business showed no meaningful revenue growth from 2021 to 2025
 
-Total revenue across the five-year period was $2,328.60.
+Total revenue across the five-year period was **$2,328.60**.
 
-Annual revenue remained within a relatively narrow range, from $449.46 in 2021 to $481.45 in 2022.
+Annual revenue remained within a relatively narrow range, from **$449.46 in 2021** to **$481.45 in 2022**.
+
 | Year | Revenue | Orders | Customers | AOV |
 |---|---:|---:|---:|---:|
 | 2021 | $449.46 | 83 | 46 | $5.42 |
@@ -184,51 +193,53 @@ Annual revenue remained within a relatively narrow range, from $449.46 in 2021 t
 | 2023 | $469.58 | 83 | 47 | $5.66 |
 | 2024 | $477.53 | 83 | 47 | $5.75 |
 | 2025 | $450.58 | 80 | 46 | $5.63 |
-Revenue then remained relatively stable before declining to $450.58 in 2025.
 
-Overall, 2025 revenue was only 0.25% higher than in 2021, indicating that the business experienced no meaningful long-term revenue growth during the analyzed period.
+Revenue then remained relatively stable before declining to **$450.58 in 2025**.
 
-2. A stable customer base and order volume explain the lack of revenue growth in 2021–2025
+Overall, 2025 revenue was only **0.25% higher than in 2021**, indicating that the business experienced no meaningful long-term revenue growth during the analyzed period.
 
-The number of customers remained highly stable throughout 2021–2025, ranging from 46 to 47 customers per year.
+### 2. A stable customer base and order volume explain the lack of revenue growth in 2021–2025
 
-Order volume was also stable at 83 orders per year from 2021 to 2024, before declining slightly to 80 orders in 2025.
+The number of customers remained highly stable throughout 2021–2025, ranging from **46 to 47 customers per year**.
 
-With both customer and order volumes remaining largely unchanged, Average Order Value was the main source of year-to-year revenue fluctuations. AOV ranged from $5.42 to $5.80 during the period.
+Order volume was also stable at **83 orders per year from 2021 to 2024**, before declining slightly to **80 orders in 2025**.
+
+With both customer and order volumes remaining largely unchanged, Average Order Value was the main source of year-to-year revenue fluctuations. AOV ranged from **$5.42 to $5.80** during the period.
 
 This suggests that the main growth limitation was not a significant decline in customer value or order volume, but the absence of meaningful growth in the customer base and purchasing activity.
 
-3. Revenue was highly concentrated across genres in 2021–2025
+### 3. Revenue was highly concentrated across genres in 2021–2025
 
-The top six genres account for approximately 80.9% of total revenue across 2021–2025.
+The top six genres accounted for approximately **80.9% of total revenue** across 2021–2025.
 
-Rock is the dominant genre, generating $826.65, or approximately 35.5% of total revenue on its own.
+Rock was the dominant genre, generating **$826.65**, or approximately **35.5% of total revenue** on its own.
 
-The next largest contributors are:
+The next largest contributors were:
 
-* Latin — $382.14
-* Metal — $261.36
-* Alternative & Punk — $241.56
+* **Latin — $382.14**
+* **Metal — $261.36**
+* **Alternative & Punk — $241.56**
 
 This indicates a strong concentration of revenue in a relatively small number of genres.
 
-4. Revenue was geographically concentrated between 2021 and 2025
+### 4. Revenue was geographically concentrated between 2021 and 2025
 
-Across 2021–2025, the top five countries generated $1,368.70, representing approximately 58.8% of total revenue.
+Across 2021–2025, the top five countries generated **$1,368.70**, representing approximately **58.8% of total revenue**.
 
-The USA is the largest market:
+The USA was the largest market:
 
-* USA: $523.06
-* Canada: $303.96
-* France: $195.10
-* Brazil: $190.10
-* Germany: $156.48
+* **USA:** $523.06
+* **Canada:** $303.96
+* **France:** $195.10
+* **Brazil:** $190.10
+* **Germany:** $156.48
 
-The USA alone contributes approximately 22.5% of total revenue.
+The USA alone contributed approximately **22.5% of total revenue**.
 
-5. Revenue per customer remained relatively consistent across the largest markets in 2021–2025
+### 5. Revenue per customer remained relatively consistent across the largest markets in 2021–2025
 
 Across 2021–2025, the largest markets by total revenue also showed relatively similar Revenue per Customer.
+
 | Country | Revenue | Customers | Revenue per Customer |
 |---|---:|---:|---:|
 | USA | $523.06 | 13 | $40.24 |
@@ -236,37 +247,45 @@ Across 2021–2025, the largest markets by total revenue also showed relatively 
 | France | $195.10 | 5 | $39.02 |
 | Brazil | $190.10 | 5 | $38.02 |
 | Germany | $156.48 | 4 | $39.12 |
+
 This suggests that differences in total country revenue were driven primarily by the size of the customer base rather than major differences in customer value.
 
-6. Monthly revenue shows no strong recurring seasonal pattern
+### 6. Monthly revenue showed no strong recurring seasonal pattern between 2021 and 2025
 
-The monthly analysis across 2021–2025 shows a relatively stable baseline of monthly revenue, with several temporary peaks and declines rather than a strong recurring seasonal pattern.
+The monthly analysis across 2021–2025 showed a relatively stable baseline of monthly revenue, with several temporary peaks and declines rather than a strong recurring seasonal pattern.
 
-The most noticeable deviations occur in individual months, particularly in 2022–2024, while 2025 remains close to the overall monthly baseline.
+The most noticeable deviations occurred in individual months, particularly in 2022–2024, while 2025 remained close to the overall monthly baseline.
 
-This suggests that the dataset does not show strong, consistent seasonality, although individual monthly fluctuations are present.
+This suggests that the dataset does not show strong, consistent seasonality, although individual monthly fluctuations were present.
 
-Business Recommendations
+## Business Recommendations
 
-1. Focus on customer base expansion
+### 1. Focus on customer base expansion
+
 The main growth constraint is the lack of meaningful customer growth. With the customer base remaining at 46–47 customers per year, acquiring new customers should be a primary growth priority.
 
-2. Increase purchase frequency and Average Order Value
-Since order volume and AOV remain relatively stable, increasing purchase frequency and encouraging higher-value purchases could provide additional revenue growth without relying solely on customer acquisition.
+### 2. Increase purchase frequency and Average Order Value
 
-3. Prioritize high-performing genres and markets while diversifying revenue
-Rock and the top six genres generate a large share of total revenue, while the USA and other leading markets account for a significant portion of geographic revenue. These segments should remain a focus for commercial activity, while developing secondary genres and markets can reduce concentration risk and create additional growth opportunities.
+Since order volume and AOV remained relatively stable, increasing purchase frequency and encouraging higher-value purchases could provide additional revenue growth without relying solely on customer acquisition.
 
-4. Use targeted campaigns rather than relying on seasonality
-The analysis does not reveal a strong recurring seasonal pattern. Marketing activity should therefore be driven by customer, genre, and market performance rather than broad seasonal assumptions. Short-term peaks can still be used to identify opportunities for targeted campaigns.
+### 3. Prioritize high-performing genres and markets while diversifying revenue
 
-Conclusion
+Rock and the top six genres generated a large share of total revenue, while the USA and other leading markets accounted for a significant portion of geographic revenue.
+
+These segments should remain a focus for commercial activity, while developing secondary genres and markets can reduce concentration risk and create additional growth opportunities.
+
+### 4. Use targeted campaigns rather than relying on seasonality
+
+The analysis did not reveal a strong recurring seasonal pattern.
+
+Marketing activity should therefore be driven by customer, genre and market performance rather than broad seasonal assumptions. Short-term peaks can still be used to identify opportunities for targeted campaigns.
+
+## Conclusion
 
 The analysis shows that the business maintained a relatively stable revenue level between 2021 and 2025, with no meaningful long-term growth. Customer and order volumes remained largely unchanged, while Average Order Value fluctuated only slightly.
 
-Revenue is concentrated across a small number of genres and countries, with Rock and the USA being the largest contributors. At the same time, Revenue per Customer remains relatively consistent across major markets, suggesting that differences in country performance are driven primarily by customer base size.
+Revenue was concentrated across a small number of genres and countries, with Rock and the USA being the largest contributors. At the same time, Revenue per Customer remained relatively consistent across major markets, suggesting that differences in country performance were driven primarily by customer base size.
 
 Overall, the key growth opportunity is to expand the customer base and increase purchasing activity while continuing to leverage high-performing genres and markets. At the same time, developing secondary genres and markets could help reduce revenue concentration and create a more diversified growth base.
 
-This analysis demonstrates how customer, revenue, genre, geographic, and temporal data can be combined to identify the key factors limiting growth and inform targeted business decisions.
-
+This analysis demonstrates how customer, revenue, genre, geographic and temporal data can be combined to identify the key factors limiting growth and inform targeted business decisions.
