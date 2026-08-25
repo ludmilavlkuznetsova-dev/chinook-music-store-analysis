@@ -166,6 +166,8 @@ The Executive Dashboard provides a high-level overview of business performance.
 * Top 5 Countries by Revenue
 * Year filter
 
+![Sales Overview Dashboard](images/sales-overview.png)
+
 ### 2. Analytical Dashboard — Sales Analysis
 
 The Analytical Dashboard provides a more detailed view of the main revenue drivers.
@@ -179,6 +181,8 @@ The Analytical Dashboard provides a more detailed view of the main revenue drive
 * Customer Count and Revenue per Customer by Country
 
 The dashboard allows users to investigate where revenue comes from and how revenue patterns differ across countries, genres and years.
+
+![Sales Analysis Dashboard](images/sales-analysis.png)
 
 ## Key Insights
 
